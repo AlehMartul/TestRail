@@ -1,0 +1,1 @@
+Insert login and password in suitable fields in config.properties
