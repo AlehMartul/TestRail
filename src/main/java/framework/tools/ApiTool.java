@@ -12,7 +12,7 @@ public class ApiTool {
                 .post(baseUri);
     }
 
-    public void postScreenshot1(String baseUri, String login, String password, String pathToFile) {
+    public void postScreenshot(String baseUri, String login, String password, String pathToFile) {
         RestAssured.given().contentType("multipart/form-data").multiPart("attachment", new File(pathToFile))
                 .auth().preemptive().basic(login, password)
                 .post(baseUri);
